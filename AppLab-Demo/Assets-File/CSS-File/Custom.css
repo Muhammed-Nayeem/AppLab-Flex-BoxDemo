@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*google fonts link*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+/*Some Variables*/
+:root {
+  --Theme-Color: #fe9d9d;
+  --Second-Theme: #ca4cd9;
+  --Third-Theme: #825cf7;
+  --Primary-Color: #fdfdfe;
+  --Third-Primary: #f4feff;
+  --Font-Color: #242f51;
+  --Sub-Font-Color: #9d9ea1;
+  --Logo-Font-Color: #fcae61;
+  --Second-Primary: #ffffff;
+}
+html {
+  scroll-behavior: smooth;
+  transition: 0.3s ease;
+}
+
+/*CSS Common Code*/
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.pt-50 {
+  padding-top: 50px;
+}
+.pb-50 {
+  padding-bottom: 50px;
+}
+.text-center {
+  text-align: center;
+}
+.Btn {
+  text-transform: uppercase;
+  background: var(--Second-Theme);
+  color: var(--Primary-Color);
+  border: none;
+  outline: none;
+  padding: 14px 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/*Main CSS Code Start*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/*Header CSS Code*/
+.header-area {
+  background: var(--Primary-Color);
+  min-height: 50px;
+  padding: 6px 0;
+}
+.header-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a h4 {
+  color: var(--Logo-Font-Color);
+  text-transform: lowercase;
+  font-size: 35px;
+  font-weight: 700;
+}
+.logo a h4 span {
+  text-transform: capitalize;
+  color: var(--Font-Color);
+  font-weight: 800;
+}
+.Menu ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+.Menu ul li a {
+  display: block;
+  color: var(--Font-Color);
+  text-transform: capitalize;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+/*Banner CSS Code*/
+.banner-area {
+  background: var(--Primary-Color);
+  padding: 30px 0;
+}
+.banner-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-text {
+  flex-basis: 45%;
+}
+.banner-image {
+  flex-basis: 35%;
+}
+.banner-image img,
+.feature-image img,
+.image-content img {
+  width: 100%;
+}
+.banner-text h4 {
+  text-transform: uppercase;
+  color: var(--Logo-Font-Color);
+  font-size: 16px;
+}
+.banner-text h2 {
+  text-transform: capitalize;
+  font-size: 55px;
+  color: var(--Font-Color);
+}
+.banner-text h2 span {
+  display: block;
+  font-size: 40px;
+  color: var(--Theme-Color);
+}
+.banner-text p {
+  color: var(--Sub-Font-Color);
+  margin: 15px 0 25px 0;
+}
+
+/*Features CSS Code*/
+.features-area {
+  background: var(--Primary-Color);
+}
+.section-title {
+  margin: 10px 0 70px 0;
+}
+.section-title h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--Font-Color);
+  margin-bottom: 8px;
+}
+.section-title p {
+  color: var(--Sub-Font-Color);
+}
+.feature-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature-image {
+  flex-basis: 40%;
+}
+.feature-box {
+  flex-basis: 55%;
+}
+.inner-feature {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.single-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: 45%;
+  margin-bottom: 90px;
+  background: var(--Primary-Color);
+  padding: 15px 0;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+.single-feature i {
+  height: 30px;
+  width: 30px;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Third-Theme);
+  color: var(--Primary-Color);
+  margin-bottom: 15px;
+}
+.single-feature h4 {
+  text-transform: capitalize;
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: 600;
+  color: var(--Font-Color);
+}
+.single-feature p {
+  color: var(--Font-Color);
+}
+
+/*Services CSS Code*/
+.services-area {
+  background: var(--Primary-Color);
+}
+.services-box,
+.prices-box,
+.available-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.single-service {
+  flex-basis: 28%;
+  background: var(--Second-Primary);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.single-service img {
+  width: 100%;
+  border: 1px dashed var(--Sub-Font-Color);
+}
+.single-service h4 {
+  text-transform: uppercase;
+  background: var(--Third-Theme);
+  color: var(--Second-Primary);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-top: -20px;
+  margin-bottom: 22px;
+}
+.single-service p {
+  color: var(--Font-Color);
+  line-height: 28px;
+}
+.single-service a {
+  text-transform: capitalize;
+  background: var(--Logo-Font-Color);
+  color: var(--Second-Primary);
+  padding: 10px 50px;
+  display: block;
+  border-radius: 5px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+.price-area {
+  background: var(--Primary-Color);
+}
+.single-price {
+  flex-basis: 28%;
+  background: var(--Third-Primary);
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 40px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+.single-price h4 {
+  text-transform: capitalize;
+  color: var(--Font-Color);
+  font-size: 20px;
+}
+.single-price h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: var(--Third-Theme);
+  background: var(--Primary-Color);
+  padding: 15px 0;
+  margin: 12px 0;
+}
+.single-price span {
+  text-transform: lowercase;
+  font-size: 16px;
+  font-style: italic;
+}
+.single-price ul {
+  margin: 20px 0;
+}
+.single-price ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/*Available CSS Code*/
+.available-area {
+  background-image: linear-gradient(45deg, #6c19f6 0%, #f9218d 100%);
+  padding: 100px 0;
+}
+.text-content {
+  flex-basis: 40%;
+}
+.image-content {
+  flex-basis: 50%;
+}
+.text-content h4 {
+  text-transform: capitalize;
+  font-size: 46px;
+  color: var(--Primary-Color);
+  font-weight: 800;
+}
+.text-content p {
+  color: var(--Third-Primary);
+  margin: 20px 0 30px 0;
+}
+.text-content .app-btn {
+  margin-left: 10px;
+}
+
+/*footer CSS Code*/
+.footer-area {
+  background: #333333;
+  color: var(--Primary-Color);
+}
+.footer-content {
+  text-align: center;
+}
+.footer-content h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer-content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-content ul li {
+  margin: 0 15px;
+}
+.footer-content ul li i {
+  height: 30px;
+  width: 30px;
+  color: var(--Second-Primary);
+  font-size: 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
